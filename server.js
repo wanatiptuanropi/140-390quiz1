@@ -23,7 +23,7 @@ app.get('/student', function (request, response)
     connection.query('select * from students', function (err, rows, fields) {
       if (err) throw err
     
-    response.render('pages/student');
+    response.render('pages/students');
     })
     
     connection.end()
