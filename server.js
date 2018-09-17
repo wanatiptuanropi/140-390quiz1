@@ -8,3 +8,13 @@ var connection = mysql.createConnection({
   password : ' abc123**',
   database : 'db140390'
 });
+app.set('view engine', 'ejs');
+
+app.get('/', function (request, response)
+{
+    response.render('pages/index');
+
+});
+
+console.log('App is running at http://localhost:8080');
+app.listen(8080);
