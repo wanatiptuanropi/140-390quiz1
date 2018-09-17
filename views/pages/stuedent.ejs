@@ -1,0 +1,24 @@
+<% include ../partials/header %>
+
+<h1 class="display-4 text-center">STUDENT</h1>
+<table class = "table">
+<thead>
+<tr>
+<th>SID</th>
+<th>Title</th>
+<th>Fisrtname</th>
+<th>Lastname</th>
+</tr>
+</thead>
+<tbody>
+ <% studens.forEach(function(student) { %>
+ <tr>
+ <td scope ="row"><%= students.sid %></td>
+ <td><%= students.title %></td>
+ <td><%= students.firstname %></td>
+ <td><%= students.lastname %></td>
+ </tr>
+<% }); %>
+</tbody>
+</table>
+<% include ../partials/header %>
